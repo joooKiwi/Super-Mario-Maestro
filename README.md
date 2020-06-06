@@ -1,8 +1,30 @@
 # Super-Mario-Maestro
-A music level generator for Super Mario Maker and Super Mario Maker 2.
 
-To run a local development version, start a local HTTP server with the `maestro/` folder as its root and visit the root URL of the server, which will load the file `maestro/index.html`. If you don’t already have a tool to start a local HTTP server, you can use `python -m http.server` if you have Python installed, or if you have `npm` installed, install the [`http-server`](https://www.npmjs.com/package/http-server) package and then run it with `http-server`.
+A music level generator for _Super Mario Maker_ and _Super Mario Maker 2_.<br><br>
 
-You can also try opening `maestro/index.html` directly in your browser without starting a local HTTP server. Some of the functionality might be broken if you run the app this way, mostly due to CORS-related errors.
+To run this on a local version, you should start the HTTP server with the `maeatro/` folder as its root.<br>
+Then, enter the root URL to access the local server as `localhost:{port}/maeatro/index.html`.<br><br>
 
-If you would like to contribute to the project, please do not change the formatting of the JS code. An ESlint config file is present, which handles formatting automatically.
+If the [`http-server`](https://www.npmjs.com/package/http-server) command does not work. 2 common options can be used.<br><br>
+If Python is already installed, just run `python -m http.server`.<br><br>
+Otherwise, with `npm`, just run `npm install -g http-server` to have this command globally and installed.<br><br>
+
+
+You can always try opening `maestro/index.html` directly in your browser.<br>
+**But**, some functionality might be broken due to CORS-related errors.<br><br><br>
+
+
+If you would like to contribute to the project,<br>
+&nbsp;&nbsp;&nbsp;&nbsp; please do not change the formatting of the code.<br>
+It use a tabulation as a spacing.
+
+On _Eclipse_ and _Visual Studio_, the tab spacing is there by default.<br>
+But, on any _Jet Brains_ program, the spacing is 4 spaces by default.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; To update it, just go in `File->Setting` `Editor->Code Style`.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Then, change `Scheme` from `default` to `project` to only apply it to this project.<br>
+&nbsp;&nbsp;&nbsp;&nbsp; Finally, change on `Code Style`, the `HTML`, `Javascript` and `Typescript` parameter to:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; `Use tab character` and `Smart tabs` to **checked**.<br><br><br>
+
+
+The code formatting is handled by  ESLint on `maestro/.eslintrc.json`.<br><br>
+````
